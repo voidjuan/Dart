@@ -17,7 +17,7 @@ void main(List<String> args) {
   cuotaHora = double.parse(stdin.readLineSync()!);
   //Proceso de algoritmo
   sueldo = horasTrabajadas * cuotaHora;
-  if(horasTrabajadas > 40) {
+  if (horasTrabajadas > 40) {
     incentivo = sueldo * 0.05;
     sueldo = sueldo + incentivo;
     print("Se obtuvo un incentivo de: $incentivo");
