@@ -20,14 +20,14 @@ void main(List<String> args) {
   //Procesos y salida de algoritmo
   if (clave == 1 || clave == 2) {
     descuento = precio * 0.1;
+    precioFinal = precio - descuento;
     if (clave == 2) {
       descuento = precio * 0.2;
+      precioFinal = precio - descuento;
     }
-    precioFinal = precio - descuento;
   }
   if (clave < 1 || clave > 2) {
     print("La clave es incorrecta");
   }
-  print(
-      "Es articulo que usted comprara es: $nombreArt y con respecto a su clave, usted debe pagar: $precioFinal");
+  print("Es articulo que usted comprara es: $nombreArt y con respecto a su clave, usted debe pagar: $precioFinal");
 }
