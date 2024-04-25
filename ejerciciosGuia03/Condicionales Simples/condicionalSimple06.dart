@@ -13,7 +13,7 @@ void main(List<String> args) {
   print("Cual es el valor total de sus compras");
   totalCompras = double.parse(stdin.readLineSync()!);
   //Procesos de algoritmo
-  numeroX = Random().nextInt(100) + 1;
+  numeroX = Random().nextInt(100);
   descuento = 0;
   if (numeroX < 74) {
     descuento = totalCompras * 0.15;
