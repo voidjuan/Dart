@@ -1,7 +1,7 @@
 import 'dart:io';
 
 void main(List<String> args) {
-  //JUAN ESTEBAN - EJE CONDICIONAL ANIDADO 07
+  //JUAN ESTEBAN - EJE CONDICIONAL ANIDADO 10
   /*
    Tomando como base los resultados obtenidos en un laboratorio de análisis clínicos, un medico
   determina si una persona esta normal, tiene anemia o tiene cardiopatía lo cual depende de su nivel
