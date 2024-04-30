@@ -16,7 +16,7 @@ void main() {
   print("Su peso es $peso y su promedio es: $promedio");
   print("**************************");
   print("Tipo CADENA");
-  String telefono;
+  String? telefono;
   telefono = 3015325284;
   String email = "jelopez702@gmail.com";
   print("Su telefono es $telefono y su email es $email");

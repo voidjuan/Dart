@@ -21,4 +21,43 @@ mujeres > 15 años          12 - 16 g%
 hombres > 15 años          14 - 18 g%
   */
   // DEFINICION DE VARIABLES
+  int edad;
+  double nivelHemoglobina;
+  String? resultado, genero, opcionEdad;
+  //Entradas de algoritmo
+  print("La persona es mayor a un año? (SI) - (NO)");
+  opcionEdad = stdin.readLineSync();
+  print("Cual es su genero Hombre(H) o Mujer(M)");
+  genero = stdin.readLineSync();
+  print("Cual es su nivel de hemoglobina");
+  nivelHemoglobina = double.parse(stdin.readLineSync()!);
+  //Procesos de algoritmo
+  if(opcionEdad?.toUpperCase() == "SI"){
+    print("Ingrese su edad en años");
+    edad = int.parse(stdin.readLineSync()!);
+    if(edad <= 5){
+      if(nivelHemoglobina < 11.5){
+        resultado = "Anemia";
+      } else if(nivelHemoglobina > 15){
+        resultado = "cardiopatia";
+      } else{
+        resultado = "normal";
+      }
+    } else if(edad <= 10){
+      if(nivelHemoglobina < 12.6){
+        resultado = "Anemia";
+      } else if(nivelHemoglobina > 15){
+        resultado = "cardiopatia";
+      } else {
+        resultado = "normal";
+      }
+
+    } else if(edad <= 15){
+      if(nivelHemoglobina < 13){
+        resultado = "anemia";
+      } else if(nivelHemoglobina > 15){
+        
+      }
+    }
+  } 
 }
