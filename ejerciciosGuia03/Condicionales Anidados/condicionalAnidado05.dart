@@ -19,7 +19,7 @@ void main(List<String> args) {
   kilosManzana = double.parse(stdin.readLineSync()!);
   //Procesos de algoritmo
   subtotal = kilosManzana * precioKilo;
-  if(kilosManzana < 1 && kilosManzana <= 2){
+  if(kilosManzana <= 2){
     descuento = 0;
   }else if(kilosManzana > 2 && kilosManzana <= 5){
     descuento = subtotal * 0.1;
