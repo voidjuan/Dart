@@ -10,6 +10,7 @@ void main () {
   String nombre; //Variable tipo cadena
   int edad; // Variable tipo numero
   double altura; // Variable de numero real
+  // ignore: unused_local_variable
   bool estado; // Variable logica
 
   nombre = "Ana"; // Asignacion de variables

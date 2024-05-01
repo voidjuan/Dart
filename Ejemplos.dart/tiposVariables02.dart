@@ -17,14 +17,14 @@ void main() {
   print("**************************");
   print("Tipo CADENA");
   String? telefono;
-  telefono = 3015325284;
+  telefono = 3015325284 as String?;
   String email = "jelopez702@gmail.com";
   print("Su telefono es $telefono y su email es $email");
   print("**************************");
   print("Tipo BOOLEANO");
   bool esCasado;
   esCasado = false;
-  Bool tieneHijos = true;
+  Bool tieneHijos = true as Bool;
   print("Es casado: $esCasado");
   print("Tiene hijostouch: $tieneHijos");
 }

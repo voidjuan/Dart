@@ -62,6 +62,7 @@ void main(List<String> args) {
     break;
   }
   totalCompra = subtotal - descuento;
+  //Salidas de algoritmo
   print("su nombre es: $nombreCliente");
   print("El subtotal de su compra es: $subtotal");
   print("El descuento que se le hara es de: $descuento");
