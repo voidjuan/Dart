@@ -42,24 +42,26 @@ void main(List<String> args) {
   cantRecogedores = int.parse(stdin.readLineSync()!);
   cantAromatizantes = int.parse(stdin.readLineSync()!);
   //Procesos de algoritmo
-  subtotal = (cantEscobas.toDouble() * precioEscoba)+(cantRecogedores * precioRecogedor)+(cantAromatizantes * precioAromatizante);
-  switch(categoria){
+  subtotal = (cantEscobas.toDouble() * precioEscoba) +
+      (cantRecogedores * precioRecogedor) +
+      (cantAromatizantes * precioAromatizante);
+  switch (categoria) {
     case 1:
       descuento = subtotal * 0.15;
       break;
-    case 2: 
+    case 2:
       descuento = subtotal * 0.08;
       break;
-    case 3: 
+    case 3:
       descuento = subtotal * 0.12;
       break;
-    case 4: 
+    case 4:
       descuento = subtotal * 0.15;
       break;
     default:
-    print("La categoria es incorrecta");
-    descuento = 0;
-    break;
+      print("La categoria es incorrecta");
+      descuento = 0;
+      break;
   }
   totalCompra = subtotal - descuento;
   //Salidas de algoritmo

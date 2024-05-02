@@ -34,14 +34,14 @@ void main(List<String> args) {
   print("Cuantas hectareas desea fumigar");
   hectareas = int.parse(stdin.readLineSync()!);
   //Procesos de algoritmo
-  switch(tipoFumigacion){
-    case 1: 
+  switch (tipoFumigacion) {
+    case 1:
       subtotal = hectareas * 50000;
       break;
     case 2:
       subtotal = hectareas * 70000;
       break;
-    case 3: 
+    case 3:
       subtotal = hectareas * 80000;
       break;
     case 4:
@@ -51,11 +51,11 @@ void main(List<String> args) {
       print("Tipo de fumigación incorrecto.");
       break;
   }
-  if(hectareas > 100){
+  if (hectareas > 100) {
     descuentoSuperficie = subtotal * 0.05;
     totalPagar = subtotal - descuentoSuperficie;
   }
-  if(subtotal > 1000000){
+  if (subtotal > 1000000) {
     descuentoTotal = (subtotal - 1000000) * 0.1;
     totalPagar = subtotal - descuentoTotal;
   }

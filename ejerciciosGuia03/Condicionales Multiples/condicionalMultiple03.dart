@@ -11,10 +11,10 @@ void main(List<String> args) {
   //Entradas de algoritmo
   print("Digite el numero 1");
   num1 = int.parse(stdin.readLineSync()!);
-   print("Digite el numero 2");
+  print("Digite el numero 2");
   num2 = int.parse(stdin.readLineSync()!);
   //Procesos de algoritmo
-  switch(num1){
+  switch (num1) {
     case 1:
       variable = 100 * num2;
       break;
