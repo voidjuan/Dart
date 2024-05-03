@@ -1,7 +1,7 @@
 import 'dart:io';
 
 void main(List<String> args) {
-  //JUAN ESTEBAN LOPEZ - CONDICIONAL MULTIPLE 04
+  //JUAN ESTEBAN LOPEZ - CONDICIONAL MULTIPLE 06
   /*
   Calcular el valor de f(x) según la expresión:
   */
