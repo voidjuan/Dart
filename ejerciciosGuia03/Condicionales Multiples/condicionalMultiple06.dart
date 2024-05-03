@@ -27,10 +27,10 @@ void main(List<String> args) {
     case "febrero":
       if ((anio % 4 == 0 && anio % 100 != 0) || anio % 400 == 0) {
         dias = 29;
-      print('El mes de febrero tiene 29 días en un año bisiesto.');
+      print("El mes de febrero tiene 29 días en un año bisiesto.");
     } else {
       dias = 28;
-      print('El mes de febrero tiene 28 días en un año no bisiesto.');
+      print("El mes de febrero tiene 28 días en un año no bisiesto.");
     }
       break;
     case "abril":
