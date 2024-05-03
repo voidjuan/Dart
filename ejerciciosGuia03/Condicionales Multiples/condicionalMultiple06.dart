@@ -3,7 +3,7 @@ import 'dart:io';
 void main(List<String> args) {
   //JUAN ESTEBAN LOPEZ - CONDICIONAL MULTIPLE 06
   /*
-  Calcular el valor de f(x) según la expresión:
+  Desarrollar un algoritmo que lea el nombre del mes y el año e imprima en pantalla cuantos días tiene. Es necesario tener en cuenta si es año bisiesto o no.
   */
   //DEFINICION DE VARIABLES
   String? nombreMes;
