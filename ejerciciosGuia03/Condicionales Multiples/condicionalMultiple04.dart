@@ -1,4 +1,3 @@
-import 'dart:ffi';
 import 'dart:io';
 import 'dart:math';
 
@@ -14,7 +13,7 @@ void main(List<String> args) {
   //Entradas de algoritmo
   print("Ingrese el valor de la variable");
   variable = double.parse(stdin.readLineSync()!);
-  //Procesos de algoritmo
+  //Procesos y salidas de algoritmo
   clave = variable % 4;
   switch(clave){
     case 0:
@@ -37,5 +36,4 @@ void main(List<String> args) {
       print("No se puede realizar la operacion");
       break;
   }
-  print("object")
 }
