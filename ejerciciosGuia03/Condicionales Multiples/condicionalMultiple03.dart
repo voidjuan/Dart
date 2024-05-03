@@ -28,5 +28,6 @@ void main(List<String> args) {
       variable = 0;
       break;
   }
+  //Salidas de algoritmo
   print("La variable resultante es: $variable");
 }
