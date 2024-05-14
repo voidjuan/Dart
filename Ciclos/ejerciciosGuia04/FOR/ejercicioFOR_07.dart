@@ -3,8 +3,9 @@ import 'dart:io';
 void main(List<String> args) {
   List<double> compras = [];
   double descuento = 0, totalPagar = 0, kilosNaranja, precioNeto;
+  int cantClientes = 15;
 
-  for(int i = 1; i <= 15; i++){
+  for(int i = 1; i <= cantClientes; i++){
     print("Cliente #$i ingrese la cantidad de naranjas en kilos");
     kilosNaranja = double.parse(stdin.readLineSync()!);
     precioNeto = kilosNaranja * 3000;
