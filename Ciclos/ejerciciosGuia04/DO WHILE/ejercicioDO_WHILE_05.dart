@@ -10,7 +10,7 @@ void main(List<String> args) {
   //Entrada de algoritmo
   print("Ingrese un numero");
   num = int.parse(stdin.readLineSync()!);
-  //Proceso de algoritmo
+  //Procesos de algoritmo
   do {
     suma += num;
     num -= 2;

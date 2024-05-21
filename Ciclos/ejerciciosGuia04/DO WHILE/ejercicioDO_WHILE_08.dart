@@ -10,7 +10,7 @@ void main(List<String> args) {
   //Entrada de algoritmo
   print("Ingrese una letra");
   String? letra = stdin.readLineSync();
-  //Proceso de algoritmo
+  //Procesos de algoritmo
   do {
     if (letra == 'a' ||
         letra == 'e' ||

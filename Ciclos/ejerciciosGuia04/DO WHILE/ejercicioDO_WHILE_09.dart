@@ -20,7 +20,7 @@ void main(List<String> args) {
     print("3. Salir del programa");
     opcion = int.parse(stdin.readLineSync()!);
 
-    //Proceso de algoritmo
+    //Procesos de algoritmo
     switch (opcion) {
       case 1:
         print("Ingrese los grados");

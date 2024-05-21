@@ -26,7 +26,7 @@ void main(List<String> args) {
     print("Ingrese el porcentaje de votos en posgrado");
     porcentajePosgrado = double.parse(stdin.readLineSync()!);
     totalVotos = porcentajePrimaria + porcentajeSecundaria + porcentajeTecnica + porcentajeProfesional + porcentajePosgrado;
-    //Proceso de algoritmo
+    //Procesos de algoritmo
     if (totalVotos > 0) {
       porcentajePrimaria = (porcentajePrimaria / totalVotos) * 100;
       porcentajeSecundaria = (porcentajeSecundaria / totalVotos) * 100;

@@ -13,7 +13,7 @@ void main(List<String> args) {
   while(numControl != 0){
     print("Ingrese la calificacion del alumno");
     promedio = int.parse(stdin.readLineSync()!);
-    //Proceso de algoritmo
+    //Procesos de algoritmo
     if(contador == 0){
       max = promedio;
       maxNumControl = numControl;
