@@ -6,19 +6,20 @@ void main(List<String> args) {
   Encontrar el menor valor de un conjunto de n números dados.
   */
   // DEFINICION DE VARIABLES
-  int num, numMenor = 0;
+  int cantNumeros, num, numMenor = 0, contador = 0;
   //Entrada de algoritmo
   print("Ingrese la cantidad de numeros");
-  num = int.parse(stdin.readLineSync()!);
+  cantNumeros = int.parse(stdin.readLineSync()!);
   print("Ingrese el primer numero");
   numMenor = int.parse(stdin.readLineSync()!);
   //Proceso de algoritmo
-  for (int i = 1; i < num; i++) {
-    print("Ingrese el numero ${i + 1}");
+  while (contador < cantNumeros) {
+    print("Ingrese el numero ${contador + 2}");
     num = int.parse(stdin.readLineSync()!); 
     if (num < numMenor) {
       numMenor = num;
     }
+    contador++;
   }
   //Salida de algoritmo
   print("El valor menor es $numMenor");

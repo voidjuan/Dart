@@ -12,15 +12,15 @@ void main(List<String> args) {
     opcion = int.parse(stdin.readLineSync()!);
     switch (opcion) {
       case 1:
-        print("Ha seleccionado consultar saldo");
+        print("Ha seleccionado pagar factura");
         print("-------------------------------");
         break;
       case 2:
-        print("Ha seleccionado realizar transferencia");
+        print("Ha seleccionado consultar saldo");
         print("-------------------------------");
         break;
       case 3:
-        print("Ha seleccionado pagar factura");
+        print("Ha seleccionado realizar transferencia");
         print("-------------------------------");
         break;
       case 4:

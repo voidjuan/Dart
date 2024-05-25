@@ -3,7 +3,9 @@ import 'dart:io';
 void main(List<String> args) {
   //JUAN ESTEBAN - EJE CONDICIONAL WHILE 03
   /*
-  Determinar  cuantos  hombres  y  cuantas  mujeres  se  encuentran  en  un  grupo  de  n  personas, suponiendo que los datos son extraídos alumno por alumno.
+  Determinar  cuantos  hombres  y  cuantas  mujeres  se  
+  encuentran  en  un  grupo  de  n  personas, suponiendo 
+  que los datos son extraídos alumno por alumno.
   */
   // DEFINICION DE VARIABLES
   int cantMujeres = 0, cantHombres = 0, nPersonas, contador = 0;

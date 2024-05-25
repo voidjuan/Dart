@@ -46,6 +46,7 @@ void main(List<String> args) {
     promedioMujeres = 0;
   }
   if (cantAlumnos > 0) {
+    sumaEdadTotal = sumaEdadHombres + sumaEdadMujeres;
     promedioTotal = sumaEdadTotal / cantAlumnos;
   } else {
     promedioTotal = 0;

@@ -33,9 +33,6 @@ void main(List<String> args) {
       resultado = num1 / num2;
       print("La division de los numeros es: $resultado");
       break;
-      case 5:
-      print("En la buena...)");
-      break;
       default:
       print("Opcion Incorrecta");
     }

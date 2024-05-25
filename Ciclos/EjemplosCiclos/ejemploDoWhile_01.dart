@@ -4,7 +4,7 @@ void main(List<String> args) {
   int num, suma = 0;
 
   do{
-    print("Ingrese un numero");
+    print("Ingrese un numero (cero para salir)");
     num = int.parse(stdin.readLineSync()!);
     if(num > 0){
       suma += num;

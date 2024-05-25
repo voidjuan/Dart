@@ -3,7 +3,11 @@ import 'dart:io';
 void main(List<String> args) {
   //JUAN ESTEBAN - EJE CONDICIONAL DO WHILE 02
   /*
-  Un alumno de la clase de lógica matemática desea desarrollar un algoritmo y diagrama de flujo en el cual  introduzca  un  número  entero  positivo  e  invierta  los  dígitos  del  número.  Mostrar  el  número invertido.
+  Un alumno de la clase de lógica matemática desea 
+  desarrollar un algoritmo y diagrama de flujo en 
+  el cual  introduzca  un  número  entero  positivo 
+  e  invierta  los  dígitos  del  número.  Mostrar  
+  el  número invertido.
   */
   // DEFINICION DE VARIABLES
   int num, numInvertido = 0, digito;
