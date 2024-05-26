@@ -16,18 +16,21 @@ void main(List<String> args) {
   esta  señora  a obtener el total de sus compras.
   */
   // DEFINICION DE VARIABLES
-  int contador = 0, cantArticulos = 0;
-  double totalArticulos = 0, precioArticulo = 0, totalDinero = 0;
+  int cantArticulos;
+  double totalArticulo, precioArticulo, totalDinero = 0;
   //Entrada y salida de algoritmo
   do {
     print("Ingrese la cantidad de articulos");
     cantArticulos = int.parse(stdin.readLineSync()!);
+
     print("Ingrese el precio del articulo");
     precioArticulo = double.parse(stdin.readLineSync()!);
-    totalArticulos = cantArticulos * precioArticulo;
-    totalDinero = totalDinero + totalArticulos;
-    contador++;
-  } while (contador > cantArticulos);
+
+    totalArticulo = cantArticulos * precioArticulo;
+    totalDinero += totalArticulo;
+    
+    print("Quiere ingresar otro articulo? (SI/NO)");
+  } while (stdin.readLineSync()!.toUpperCase() == "SI");
   //Salida de algoritmo
   print("El total de la compra es: $totalDinero");
 }

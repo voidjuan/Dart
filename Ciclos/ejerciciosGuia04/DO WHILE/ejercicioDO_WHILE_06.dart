@@ -11,26 +11,39 @@ void main(List<String> args) {
   Suponga que los alumnos tienen diferentes promedios.
   */
   // DEFINICION DE VARIABLES
-  int numControl, promedio, contador = 0, max = 0, maxNumControl = 0;
+  int numControl;
+  double calificacion1, calificacion2, calificacion3, calificacion4, calificacion5;
+  double promedio, promedioMayor = 0;
+  String? opcion;
   //Entrada de algoritmo
+  do{
   print("Ingrese el numero de control del alumno");
   numControl = int.parse(stdin.readLineSync()!);
-  while(numControl != 0){
-    print("Ingrese la calificacion del alumno");
-    promedio = int.parse(stdin.readLineSync()!);
-    //Procesos de algoritmo
-    if(contador == 0){
-      max = promedio;
-      maxNumControl = numControl;
-    }else{
-      if(promedio > max){
-        max = promedio;
-        maxNumControl = numControl;
-      }
-    }
-    numControl = int.parse(stdin.readLineSync()!);
-    contador++;
+ 
+  print("Ingrese la calificacion de la unidad 1");
+  calificacion1 = double.parse(stdin.readLineSync()!);
+
+  print("Ingrese la calificacion de la unidad 2");
+  calificacion2 = double.parse(stdin.readLineSync()!);
+
+  print("Ingrese la calificacion de la unidad 3");
+  calificacion3 = double.parse(stdin.readLineSync()!);
+
+  print("Ingrese la calificacion de la unidad 4");
+  calificacion4 = double.parse(stdin.readLineSync()!);
+
+  print("Ingrese la calificacion de la unidad 5");
+  calificacion5 = double.parse(stdin.readLineSync()!);
+
+  promedio = (calificacion1 + calificacion2 + calificacion3 + calificacion4 + calificacion5)/5;
+
+  if(promedio > promedioMayor){
+    promedioMayor = promedio;
   }
+  print("Desea ingresar los datos de otro alumno?");
+  opcion = stdin.readLineSync()!.toUpperCase();
+  }while(opcion != "NO");
+  
   //Salida de algoritmo
-  print("El numero de control del alumno con mayor promedio es $maxNumControl");
+  print("El numero de control del alumno con mayor promedio es $numControl y su promedio es $promedioMayor");
 }

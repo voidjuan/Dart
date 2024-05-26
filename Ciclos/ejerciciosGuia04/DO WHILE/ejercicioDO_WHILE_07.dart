@@ -10,19 +10,20 @@ void main(List<String> args) {
   Cuando lea las 10 letras 'a' el programa terminará.
   */
   // DEFINICION DE VARIABLES
-  int contador = 0;
+  int contadorA = 0;
   //Entrada de algoritmo
   print("Ingrese una letra");
   String? letra = stdin.readLineSync();
   //Procesos de algoritmo
   do {
-    if (letra != 'a') {
+    if (letra == 'a') {
+    contadorA++;
+    }else{
       print("La letra $letra es incorrecta");
     }
-    contador++;
     print("Ingrese una letra");
     letra = stdin.readLineSync();
-  } while (letra != 'a' && contador < 10);
+  } while (contadorA < 10);
   //Salida de algoritmo
-  print("La letra 'a' fue leida $contador veces");
+  print("La letra 'a' fue leida $contadorA veces");
 }

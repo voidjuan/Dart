@@ -12,35 +12,41 @@ void main(List<String> args) {
   ingresando datos.
   */
   // DEFINICION DE VARIABLES
-  int contador = 0;
-  double porcentajeFavor,
-      porcentajeEnContra,
-      porcentajeAbstenciones,
-      totalVotos = 0;
+  int totalDiputados = 0, votosFavor = 0, votosContra = 0, votosAbstencion = 0;
+  double porcentajeFavor, porcentajeContra, porcentajeAbstenciones;
+  String? respuestaDiputado;
   //Entrada de algoritmo
   do {
-    print("Ingrese el porcentaje de votos favor");
-    porcentajeFavor = double.parse(stdin.readLineSync()!);
-    print("Ingrese el porcentaje de votos en contra");
-    porcentajeEnContra = double.parse(stdin.readLineSync()!);
-    print("Ingrese el porcentaje de votos en abstenciones");
-    porcentajeAbstenciones = double.parse(stdin.readLineSync()!);
-    totalVotos = porcentajeFavor + porcentajeEnContra + porcentajeAbstenciones;
+     print("Esta a favor del tratado de libre comercio? (si/no/abstencion): ");
+    respuestaDiputado = stdin.readLineSync()!.toLowerCase();
+    switch (respuestaDiputado) {
+      case "si":
+        votosFavor++;
+        break;
+      case "no":
+        votosContra++;
+        break;
+      case "abstencion":
+        votosAbstencion++;
+        break;
+      default:
+        print("Opción inválida. Ingrese Si, No o Abstención.");
+    }
+    totalDiputados++;
+    print("Quiere encuestar otro diputado? (SI/NO)");
+  }while (stdin.readLineSync()!.toUpperCase() == "SI");
     //Proceso de algoritmo
-    if (totalVotos > 0) {
-      porcentajeFavor = (porcentajeFavor / totalVotos) * 100;
-      porcentajeEnContra = (porcentajeEnContra / totalVotos) * 100;
-      porcentajeAbstenciones = (porcentajeAbstenciones / totalVotos) * 100;
+    if (totalDiputados > 0) {
+      porcentajeFavor = (votosFavor / totalDiputados) * 100;
+      porcentajeContra = (votosContra / totalDiputados) * 100;
+      porcentajeAbstenciones = (votosAbstencion / totalDiputados) * 100;
     } else {
       porcentajeFavor = 0;
-      porcentajeEnContra = 0;
+      porcentajeContra = 0;
       porcentajeAbstenciones = 0;
     }
     //Salida de algoritmo
     print("El porcentaje de votos favor es: $porcentajeFavor%");
-    print("El porcentaje de votos en contra es: $porcentajeEnContra%");
-    print(
-        "El porcentaje de votos en abstenciones es: $porcentajeAbstenciones%");
-    contador++;
-  } while (contador < 1);
+    print("El porcentaje de votos en contra es: $porcentajeContra%");
+    print("El porcentaje de votos en abstenciones es: $porcentajeAbstenciones%");
 }

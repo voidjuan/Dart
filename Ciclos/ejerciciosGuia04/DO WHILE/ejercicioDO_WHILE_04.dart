@@ -12,46 +12,62 @@ void main(List<String> args) {
   El programa debe preguntar si se desea continuar ingresando datos.
   */
   // DEFINICION DE VARIABLES
-  int contador = 0;
-  double porcentajePrimaria,
-      porcentajeSecundaria,
-      porcentajeTecnica,
-      porcentajeProfesional,
-      porcentajePosgrado,
-      totalVotos = 0;
+  int totalPersonas = 0, opcion;
+  double primaria = 0, secundaria = 0, tecnica = 0, profesional = 0, posgrado = 0;
+  double porcentajePrimaria = 0, porcentajeSecundaria = 0, porcentajeTecnica = 0, porcentajeProfesional = 0, porcentajePosgrado = 0;
   //Entrada de algoritmo
   do {
-    print("Ingrese el porcentaje de votos en primaria");
-    porcentajePrimaria = double.parse(stdin.readLineSync()!);
-    print("Ingrese el porcentaje de votos en secundaria");
-    porcentajeSecundaria = double.parse(stdin.readLineSync()!);
-    print("Ingrese el porcentaje de votos en tecnica");
-    porcentajeTecnica = double.parse(stdin.readLineSync()!);
-    print("Ingrese el porcentaje de votos en profesional");
-    porcentajeProfesional = double.parse(stdin.readLineSync()!);
-    print("Ingrese el porcentaje de votos en posgrado");
-    porcentajePosgrado = double.parse(stdin.readLineSync()!);
-    totalVotos = porcentajePrimaria + porcentajeSecundaria + porcentajeTecnica + porcentajeProfesional + porcentajePosgrado;
+    print("¿Cuál es su nivel de estudios?");
+    print("1. Primaria");
+    print("2. Secundaria");
+    print("3. Carrera técnica");
+    print("4. Estudios profesionales");
+    print("5. Estudios de posgrado");
+    print("0. Salir");
+
+    opcion = int.parse(stdin.readLineSync()!);
+
+    switch (opcion) {
+      case 1:
+        primaria++;
+        break;
+      case 2:
+        secundaria++;
+        break;
+      case 3:
+        tecnica++;
+        break;
+      case 4:
+        profesional++;
+        break;
+      case 5:
+        posgrado++;
+        break;
+      case 0:
+        print("Nos vemos luego...");
+        totalPersonas--;
+        break;
+      default:
+        print("Opcion incorrecta, ingresela de nuevo");
+        break;
+    }
+    totalPersonas++;
+  }while(opcion != 0);
+
     //Procesos de algoritmo
-    if (totalVotos > 0) {
-      porcentajePrimaria = (porcentajePrimaria / totalVotos) * 100;
-      porcentajeSecundaria = (porcentajeSecundaria / totalVotos) * 100;
-      porcentajeTecnica = (porcentajeTecnica / totalVotos) * 100; 
-      porcentajeProfesional = (porcentajeProfesional / totalVotos) * 100;
-      porcentajePosgrado = (porcentajePosgrado / totalVotos) * 100;
+    if (totalPersonas > 0) {
+      porcentajePrimaria = (primaria / totalPersonas) * 100;
+      porcentajeSecundaria = (secundaria / totalPersonas) * 100;
+      porcentajeTecnica = (tecnica / totalPersonas) * 100; 
+      porcentajeProfesional = (profesional / totalPersonas) * 100;
+      porcentajePosgrado = (posgrado / totalPersonas) * 100;
     } else {
-      porcentajePrimaria = 0;
-      porcentajeSecundaria = 0;
-      porcentajeTecnica = 0;  
-      porcentajeProfesional = 0;
-      porcentajePosgrado = 0;
+      print("Nadie fue encuestado");
     }
     //Salida de algoritmo
     print("El porcentaje de votos en primaria es: $porcentajePrimaria%");
     print("El porcentaje de votos en secundaria es: $porcentajeSecundaria%");
     print("El porcentaje de votos en tecnica es: $porcentajeTecnica%");
     print("El porcentaje de votos en profesional es: $porcentajeProfesional%");
-    print("El porcentaje de votos en posgrado es: $porcentajePosgrado%");
-    contador++;
-  } while (contador < 1);
-}
+    print("El porcentaje de votos en posgrado es: $porcentajePosgrado");
+  } 
