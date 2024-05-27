@@ -37,8 +37,8 @@ void main(List<String> args) {
   } while (letra != '#');
   //Salida de algoritmo
   print("La cantidad de vocales A es: $contadorA");
-  print("La cantidad de vocales A es: $contadorE");
-  print("La cantidad de vocales A es: $contadorI");
-  print("La cantidad de vocales A es: $contadorO");
-  print("La cantidad de vocales A es: $contadorU");
+  print("La cantidad de vocales E es: $contadorE");
+  print("La cantidad de vocales I es: $contadorI");
+  print("La cantidad de vocales O es: $contadorO");
+  print("La cantidad de vocales U es: $contadorU");
 }
