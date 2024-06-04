@@ -8,7 +8,8 @@ void main(List<String> args) {
   almacenado  el  número  en  el vector o el mensaje “NO” si no lo encuentra.
   */
   List<double> X = [];
-  double cantNumeros = 12, num;
+  double cantNumeros = 12, num, numBuscar;
+  int Posicion = -1;
 
   for (var i = 0; i < cantNumeros; i++) {
     print("Ingrese el numero ${i + 1}");
@@ -18,11 +19,14 @@ void main(List<String> args) {
   print(X);
   print("*****************************************");
   print("Ingrese el numero que desea buscar");
-  num = double.parse(stdin.readLineSync()!);
-  if (X.contains(num)) {
-    print("El numero $num se encuentra en el vector");
-    print("Su posicion es ${X.indexOf(num)}");
+  numBuscar = double.parse(stdin.readLineSync()!);
+  for(int i = 0; i < X.length; i++){
+  if (numBuscar == X[i]) {
+    Posicion = i;
+    break; // Rompe el ciclo y sale
   } else {
     print("NO");
   }
+}
+print("El numero $numBuscar se encuentra en la posicion $Posicion");
 }
