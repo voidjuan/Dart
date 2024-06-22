@@ -17,6 +17,7 @@ void main(List<String> args) {
   print(frase);
   print(frase.reversed);
   if (frase == frase.reversed) {
+    print(frase.reversed);
     print("La frase es palindroma");
   } else {
     print("No es palindromo");
