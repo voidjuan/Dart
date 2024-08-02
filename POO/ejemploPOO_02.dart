@@ -25,7 +25,3 @@ class Persona {
   }
 }
 
-void main(List<String> args) {
-  Persona persona1;
-  persona1 = Persona("Juan", "Masculino", 1.68, 20050605);
-}
