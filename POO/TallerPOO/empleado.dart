@@ -23,10 +23,11 @@ class Empleado {
   }
 
   void mostrarInformacion(){
-    print(this.nombre);
-    print(this.edad);
-    print(this.salario);
-    print(this.puesto);
+    print("nombre: ${this.nombre}");
+    print("edad: ${this.edad}");
+    print("salario: ${this.salario}");
+    print("puesto: ${this.puesto}");
+    print("tipo de contrato: ${this.tipoContrato  }");
   }
 
   void calcularBonificacion(){
