@@ -1,6 +1,6 @@
 import 'dart:io';
 
-import 'Vehiculo.dart';
+import '../Vehiculo.dart';
 
 void main(List<String> args) {
 int cantIteraciones = 5;

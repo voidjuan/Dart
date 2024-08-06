@@ -1,5 +1,5 @@
 import 'dart:io';
-import 'vehiculo.dart';
+import '../vehiculo.dart';
 
 void main(List<String> args) {
   Vehiculo vehi_obj1 = Vehiculo("azul", 40, 2);

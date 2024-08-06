@@ -31,13 +31,28 @@ void main(List<String> args) {
     listaEmpleados.add(empleado_obj);
   }
   print("*" * 30);
+  print("*" * 30);
   //Metodo para mostrar la informacion de cada empleado
   mostrarInformacionEmpleados(listaEmpleados);
+
+  
 }
 
 void mostrarInformacionEmpleados(List<Empleado> listaEmpleados) {
-  for (Empleado empleado in listaEmpleados) {
-    empleado.mostrarInformacion();
+  for (Empleado empleado_obj in listaEmpleados) {
+    print("Ingrese el porcentaje del salario que desea aumentarle al empleado");
+    int porcentajeSalario = int.parse(stdin.readLineSync()!);
+    empleado_obj.aumentarSalario(porcentajeSalario);
+    empleado_obj.cumplirAnios();
     print('---------------------');
+    empleado_obj.mostrarInformacion();
+    print('---------------------');
+    print("Ingrese el nuevo puesto de trabajo");
+    String nuevoPuesto = stdin.readLineSync()!;
+    empleado_obj.cambiarPuesto("$nuevoPuesto");
+    empleado_obj.calcularBonificacion();
+    print("*" * 30);
+    print("*" * 30);
   }
 }
+
